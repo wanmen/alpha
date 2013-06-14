@@ -1,5 +1,6 @@
 @charset "utf-8";
 /* CSS Document */
+/* Modified by Mimee on 14 Jun, 2013 */
 
 @font-face {
     font-family: 'BebasRegular';
@@ -48,7 +49,7 @@ width:100px;
 margin-top:-41px;
 margin-left:-223px;
 z-index:1;
-opacity: 0.5;
+opacity: 0.9;
 }
 .slide{
 	background-attachment: fixed;
@@ -117,13 +118,13 @@ left: -150px;
 }
 #departments img:nth-child(4){
 	position:absolute;
-	top:400px;
+	top:900px;
 	left:300px;
 }
 #departments img:nth-child(5){
 	position:absolute;
 	top:600px;
-	right:300px;
+	right:600px;
 }
 #departments img:nth-child(6){
 	position:absolute;
