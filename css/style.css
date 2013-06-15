@@ -1,0 +1,228 @@
+@charset "utf-8";
+/* CSS Document */
+/* Modified by Mimee on 14 Jun, 2013 */
+
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('font/BEBAS___-webfont.eot');
+    src: url('font/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/BEBAS___-webfont.woff') format('woff'),
+         url('font/BEBAS___-webfont.ttf') format('truetype'),
+         url('font/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html,body{
+ font-family: 'BebasRegular';
+	width:100%;
+	height:100%;
+}
+
+.navigation{
+	position:fixed;
+	z-index:1;
+	top:200px;
+	background-color: rgba(100,100,100,0.2);
+}
+.navigation li{
+	color:#0066CC;
+	display:block;
+	padding: 0 10px;
+	line-height:30px;
+	margin-bottom:2px;
+	font-weight:bold;
+	-webkit-transition: all .2s ease－in－out;
+	/*border-bottom:1px solid black;
+	text-align:left;
+	width:170px;*/
+}
+.navigation li:hover,.active{
+	font-size:25px;
+	cursor:pointer;
+	-webkit-transition: all .2s ease－in－out;
+	width:100px!important;
+}
+.loginPanel{
+	position:fixed;
+	top:350px;
+	left:10px;
+	width:150px;
+	margin-top:0px;
+	margin-left:0px;
+	z-index:1;
+}
+.likePanel{
+	position:fixed;
+	top:20px;
+	right:10px;
+	width:150px;
+	z-index:1;
+}
+
+.videoFrame{
+	position:relative;
+	top:10%;
+	left:20%;
+	height:80%;
+	width:70%;
+}
+
+.loginButton{
+	width: 100px;
+}
+.onemanlogo{
+	position:fixed;
+	top:10px;
+	left:10px;
+	width:100px;
+	margin-top:0px;
+	margin-left:0px;
+	z-index:1;
+	opacity: 0.4;
+}
+.slide{
+	background-attachment: fixed;
+	width:100%;
+	height:100%;
+	position: relative;
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+.wrapper{
+	width:960px;
+	height:200px;
+	margin:0 auto;
+	position:relative;
+}
+.slideno{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	font-size:100px;
+	font-weight:bold;
+	color:rgba(255,255,255,0.3);
+}
+.button{
+	display:block;
+	width:50px;
+	height:50px;
+	position:absolute;
+	bottom:0px;
+	left:90%;
+	background-color:#222222;
+	background-image:url(../images/arrow.png);
+}
+.button:hover{
+	background-color:#494949;
+	cursor:pointer;
+}
+
+/******************************
+ SLIDE 1: Home 
+*******************************/
+#home{
+	background-color:#E0F0FF;
+	
+}
+/******************************
+ SLIDE 2: Departments
+*******************************/
+#departments{
+	background-color:#8FABFF;
+	
+}
+#departments img:first-child{
+	position:absolute;
+top: 700px;
+left: -150px;
+}
+#departments img:nth-child(2){
+	position:absolute;
+	top:300px;
+	left:100px;
+}
+#departments img:nth-child(3){
+	position:absolute;
+	top:600px;
+	left:300px;
+}
+#departments img:nth-child(4){
+	position:absolute;
+	top:400px;
+	right:200px;
+}
+#departments img:nth-child(5){
+	position:absolute;
+	top:200px;
+	right:500px;
+}
+#departments img:nth-child(6){
+	position:absolute;
+	top:600px;
+	right:300px;
+}
+#departments img:nth-child(7){
+	position:absolute;
+	top:400px;
+	right:100px;
+}
+#departments img:nth-child(8){
+	position:absolute;
+	top:100px;
+	right:300px;
+}
+/******************************
+ SLIDE 3 : One Man X
+*******************************/
+#onemanx{
+	background-color:#D9CCFF;
+}
+#onemanx img:first-child{
+	position:absolute;
+top: 700px;
+left: 300px;
+}
+#onemanx img:nth-child(2){
+	position:absolute;
+	top:100px;
+	left:100px;
+}
+#onemanx img:nth-child(3){
+	position:absolute;
+	top:150px;
+	left:300px;
+}
+#onemanx img:nth-child(4){
+	position:absolute;
+	top:450px;
+	left:300px;
+}
+#onemanx img:nth-child(5){
+	position:absolute;
+	top:200px;
+	right:300px;
+}
+#onemanx img:nth-child(6){
+	position:absolute;
+	top:100px;
+	right:300px;
+}
+/******************************
+ SLIDE 4 
+*******************************/
+
+#aboutus{
+	background-image:url(../images/Slide4/desktopabout.png);
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#aboutus .parallaxbg{
+	position:absolute;
+	right:40px;
+	top:40px;
+	font-size:28px;
+	color:rgba(51,51,51,0.3);
+}
+
