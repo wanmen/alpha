@@ -25,14 +25,13 @@
        . "&client_secret=" . $app_secret ."&grant_type=" . $grant_type . "&code=" . $code;
      $response = @file_get_contents($token_url);
      $params = json_decode($response);
-
+     $graph_url = "https://api.renren.com/v2/user/friend/list?access_token=" 
+       . $params->access_token."&userId=".$params->user->id."&pageSize=".$numberOfFriends."&pageNumber=1";
+     $friends = json_decode(file_get_contents($graph_url));
      for($i = 0; $i < $numberOfFriends; $i++){
-        $graph_url = "https://api.renren.com/v2/user/friend/list?access_token=" 
-       . $params->access_token."&userId=".$params->user->id."&pageSize=1&pageNumber=".($i+1);
-        $user = json_decode(file_get_contents($graph_url));
-        echo("Visited Renren ID ".$user->response[0]->id);
-      //  echo '<script>window.open("http://renren.com/'.$user->response[0]->id.'", "_blank", "width=400,height=500")</script>';
-      //  sleep($timeInterval);
+        echo("Visited Renren ID ".$friends->response[$i]->id);
+        echo '<script>window.open("http://renren.com/'.$friends->response[$i]->id.'", "_blank", "width=400,height=500")</script>';
+        sleep($timeInterval);
      }
    }
    else {
