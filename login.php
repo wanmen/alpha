@@ -1,9 +1,11 @@
 <?php 
+   $numberOfFriends = 2; // Total Number of Friends (Be Reminded that the Total Procedure takes $numberOfFriends*$timeInterval Time)
+   $timeInterval = 5;//Time Interval for Visiting New Friend(second)
+   $app_id = "605dddd8b117428c97369dfb283eb796";
+   $app_secret = "911a006a5079492d8400374b0a76b9b8";
 
-   $app_id = "236279";
-   $app_secret = "605dddd8b117428c97369dfb283eb796";
-   $my_url = "http://xiexieshi.com/onemanu/login.php";
-   $grant_type="authorization_code"; //支持的授权类型
+   $my_url = "http://localhost/~shaohuanli/oneman/login.php";//Please configure your app accordingly
+   $grant_type="authorization_code";
 
    session_start();
    $code = $_REQUEST["code"];
@@ -21,19 +23,17 @@
      $token_url = "https://graph.renren.com/oauth/token?"
        . "client_id=" . $app_id . "&redirect_uri=" . urlencode($my_url)
        . "&client_secret=" . $app_secret ."&grant_type=" . $grant_type . "&code=" . $code;
-
-       echo $token_url;
      $response = @file_get_contents($token_url);
-     $params = null;
-     echo $response;
-     parse_str($response, $params);
-     var_dump($params);
+     $params = json_decode($response);
 
-     $graph_url = "https://api.renren.com/v2/user?access_token=" 
-       . $params['access_token'];
-
-     $user = json_decode(file_get_contents($graph_url));
-     echo("Hello " . $user->name);
+     for($i = 0; $i < $numberOfFriends; $i++){
+        $graph_url = "https://api.renren.com/v2/user/friend/list?access_token=" 
+       . $params->access_token."&userId=".$params->user->id."&pageSize=1&pageNumber=".($i+1);
+        $user = json_decode(file_get_contents($graph_url));
+        echo("Visited Renren ID ".$user->response[0]->id);
+      //  echo '<script>window.open("http://renren.com/'.$user->response[0]->id.'", "_blank", "width=400,height=500")</script>';
+      //  sleep($timeInterval);
+     }
    }
    else {
      echo("The state does not match. You may be a victim of CSRF.");

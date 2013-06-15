@@ -52,6 +52,13 @@ html,body{
 	margin-left:0px;
 	z-index:1;
 }
+.likePanel{
+	position:fixed;
+	top:20px;
+	right:10px;
+	width:150px;
+	z-index:1;
+}
 
 .videoFrame{
 	position:relative;
@@ -141,13 +148,13 @@ left: -150px;
 }
 #departments img:nth-child(4){
 	position:absolute;
-	top:900px;
-	left:300px;
+	top:400px;
+	right:200px;
 }
 #departments img:nth-child(5){
 	position:absolute;
-	top:600px;
-	right:600px;
+	top:200px;
+	right:500px;
 }
 #departments img:nth-child(6){
 	position:absolute;
