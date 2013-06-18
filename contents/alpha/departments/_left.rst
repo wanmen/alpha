@@ -1,5 +1,4 @@
-.. news::
-   :path: departments
-   :size: 30
-   :class: nav nav-list bs-docs-sidenav
 
+.. navtree::
+   :root_depth: 1
+   :class: nav nav-list bs-docs-sidenav

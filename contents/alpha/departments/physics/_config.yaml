@@ -1,0 +1,9 @@
+title: 物理系
+description: a demo site
+theme_default: default.html
+order: 
+        index.rst
+        departments
+        x
+        about.rst
+exclude:  [index.rst]

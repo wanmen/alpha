@@ -1,12 +1,11 @@
 ---
-title: 快速教程
-description: 这里加上一些用于SEO的文字
+title: 华东
+description: 华东
 ---
-快速教程
+华东
 ===============
 
-安装
--------
+*	[复旦大学](http://page.renren.com/601704396) 
+*	[上海交大](http://page.renren.com/601704396)
 
-      python bootstrap.py -d
-      ./bin/buildout
+      
