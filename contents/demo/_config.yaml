@@ -1,5 +1,5 @@
-title: demo site
-description: a demo site
+title: 万门大学
+description: 万门Pre-Alpha版
 theme_base: http://localhost:6543/themes/bootstrap/
 theme_default: default.html
 theme: home.html
