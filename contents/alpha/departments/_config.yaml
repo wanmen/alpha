@@ -3,7 +3,7 @@ description: a demo site
 theme_default: default.html
 order: 
         index.rst
-        tour
-        blog
+        departments
+        x
         about.rst
 exclude:  [index.rst]

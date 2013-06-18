@@ -3,5 +3,5 @@ description: 万门Pre-Alpha版
 theme_base: http://localhost:6543/themes/bootstrap/
 theme_default: default.html
 theme: home.html
-order: [index.rst, tour, blog, about.rst]
+order: [index.rst, departments, x, about.rst]
 exclude: []
