@@ -1,6 +1,37 @@
+/* CSS Document
+ * Based on parallax template 
+ * and Standard Han template
+ * Modified by Mimee on 14 Jun, 2013 
+ */
 @charset "utf-8";
-/* CSS Document */
-/* Modified by Mimee on 14 Jun, 2013 */
+
+/* 漢字標準格式
+ * Standard Han Format
+ *
+ * Version: 1.2
+ * Lisence: MIT Lisence
+ * Last-Modified: 2011/12/22
+ */
+
+/* 手動設定字體 */
+/* 漢字手寫體（cursive） */
+@font-face {
+    font-family: 'ff-han';
+    src: local(STFangsong), local(STKaiti), local(Kai), local("標楷體"), local(DFKaiShu-SB-Estd-BF);
+    unicode-range: U+4E00-9FA5;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bf-han';
+    src: local(STHeiti), local(SimHei), local(STXihei);
+    unicode-range: U+4E00-9FA5;
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'BebasRegular';
@@ -14,18 +45,73 @@
 
 }
 html,body{
- font-family: 'BebasRegular';
+ font-family:'BebasRegular';
 	width:100%;
 	height:100%;
 }
 
-.navigation{
+.leftbar{
 	position:fixed;
 	z-index:1;
-	top:200px;
+	top:60px;
+	width:21.97%;
 	background-color: rgba(100,100,100,0.2);
 }
+
+ @media (max-width: 767px) {
+     .leftbar {
+         width:auto;
+     }
+ }
+
+ @media (max-width: 979px) {
+     .leftbar {
+         position:static;
+        width: auto;
+     }
+ }
+
+.leftbar #container 
+{ 
+    position: relative;
+	display:block;
+	padding: 0 10px;
+	/*line-height:30px;
+	margin-bottom:2px;*/
+	font-weight:bold;
+	background-color: #0066CC;
+	/*rgba(100,100,100,0.2);*/
+}
+.onemanlogo{
+	position:fixed;
+	top:10px;
+	left:10px;
+	width:100px;
+	margin-top:0px;
+	margin-left:0px;
+	z-index:1;
+	opacity: 0.9;
+}
+.loginPanel{
+	position:absolute;
+	top:150px;
+	left:10px;
+	width:150px;
+	margin-top:0px;
+	margin-left:0px;
+	z-index:1;
+}
+.loginButton{
+	width: 100px;
+}
+
+.navigation{
+	position:absolute;
+	z-index:1;
+	top:200px;
+}
 .navigation li{
+	font-family:'bf-han';
 	color:#0066CC;
 	display:block;
 	padding: 0 10px;
@@ -43,15 +129,7 @@ html,body{
 	-webkit-transition: all .2s ease－in－out;
 	width:100px!important;
 }
-.loginPanel{
-	position:fixed;
-	top:350px;
-	left:10px;
-	width:150px;
-	margin-top:0px;
-	margin-left:0px;
-	z-index:1;
-}
+
 .likePanel{
 	position:fixed;
 	top:20px;
@@ -68,20 +146,8 @@ html,body{
 	width:70%;
 }
 
-.loginButton{
-	width: 100px;
-}
-.onemanlogo{
-	position:fixed;
-	top:10px;
-	left:10px;
-	width:100px;
-	margin-top:0px;
-	margin-left:0px;
-	z-index:1;
-	opacity: 0.4;
-}
 .slide{
+	font-family:'BebasRegular','ff-han';
 	background-attachment: fixed;
 	width:100%;
 	height:100%;
@@ -95,6 +161,7 @@ html,body{
 	position:relative;
 }
 .slideno{
+	font-family:'BebasRegular','ff-han';
 	position:absolute;
 	bottom:0px;
 	left:0px;
@@ -128,7 +195,8 @@ html,body{
  SLIDE 2: Departments
 *******************************/
 #departments{
-	background-color:#8FABFF;
+	background-color:#E0F0FF;
+	/*background-color:#8FABFF;*/
 	
 }
 #departments img:first-child{
@@ -175,7 +243,8 @@ left: -150px;
  SLIDE 3 : One Man X
 *******************************/
 #onemanx{
-	background-color:#D9CCFF;
+	background-color:#E0F0FF;
+	/*background-color:#D9CCFF;*/
 }
 #onemanx img:first-child{
 	position:absolute;
