@@ -49,13 +49,29 @@ html,body{
 	width:100%;
 	height:100%;
 }
+#awrapper {
+    width:100%;
+    overflow:hidden;
+    padding:10px;
+}
+#sidebar {
+    float:left;
+    width:12%;
+    height:100%;
+    position:fixed;
+    z-index:100;
+	background-color: rgba(64,168,255,0.4);
+	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
 
 .leftbar{
 	position:fixed;
 	z-index:1;
 	top:60px;
 	width:21.97%;
-	background-color: rgba(100,100,100,0.2);
+	background-color: rgba(64,168,255,0.4);
+	display: block;
+	/*background-color: rgba(100,100,100,0.2);*/
 }
 
  @media (max-width: 767px) {
@@ -79,36 +95,29 @@ html,body{
 	/*line-height:30px;
 	margin-bottom:2px;*/
 	font-weight:bold;
-	background-color: #0066CC;
+	/*background-color: #0066CC;*/
+	color: blue;
 	/*rgba(100,100,100,0.2);*/
 }
+
 .onemanlogo{
-	position:fixed;
+	position:relative;
 	top:10px;
-	left:10px;
-	width:100px;
+	left:5px;
+	width:80%;
 	margin-top:0px;
 	margin-left:0px;
 	z-index:1;
 	opacity: 0.9;
 }
-.loginPanel{
-	position:absolute;
-	top:150px;
-	left:10px;
-	width:150px;
-	margin-top:0px;
-	margin-left:0px;
-	z-index:1;
-}
-.loginButton{
-	width: 100px;
-}
+
+
 
 .navigation{
 	position:absolute;
 	z-index:1;
-	top:200px;
+	top:10px;
+	width:100%;
 }
 .navigation li{
 	font-family:'bf-han';
@@ -124,12 +133,18 @@ html,body{
 	width:170px;*/
 }
 .navigation li:hover,.active{
-	font-size:25px;
+	font-size:14px;
 	cursor:pointer;
 	-webkit-transition: all .2s ease－in－out;
-	width:100px!important;
+	width:75px!important;
 }
 
+#content {
+    margin: 0 0 0 10px;
+}
+div {
+    border:1px transparent;
+}
 .likePanel{
 	position:fixed;
 	top:20px;
@@ -141,28 +156,31 @@ html,body{
 .videoFrame{
 	position:relative;
 	top:10%;
-	left:20%;
+	left:2%;
 	height:80%;
-	width:70%;
+	width:80%;
 }
 
 .slide{
+	float:right;
 	font-family:'BebasRegular','ff-han';
-	background-attachment: fixed;
-	width:100%;
+	background-attachment: absolute;
+	width:88%;
 	height:100%;
 	position: relative;
+	background-color:#E0F0FF;
+	/*rgb(26,70,137);*/
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 .wrapper{
-	width:960px;
-	height:200px;
+	width:100%px;
+	height:100%px;
 	margin:0 auto;
 	position:relative;
 }
 .slideno{
 	font-family:'BebasRegular','ff-han';
-	position:absolute;
+	position:relative;
 	bottom:0px;
 	left:0px;
 	font-size:100px;
@@ -188,21 +206,21 @@ html,body{
  SLIDE 1: Home 
 *******************************/
 #home{
-	background-color:#E0F0FF;
+	/*background-color:#E0F0FF;*/
 	
 }
 /******************************
  SLIDE 2: Departments
 *******************************/
-#departments{
+/*#departments{
 	background-color:#E0F0FF;
-	/*background-color:#8FABFF;*/
+	/*background-color:#8FABFF;
 	
-}
+}*/
 #departments img:first-child{
 	position:absolute;
-top: 700px;
-left: -150px;
+	top: 700px;
+	left: -150px;
 }
 #departments img:nth-child(2){
 	position:absolute;
@@ -242,10 +260,10 @@ left: -150px;
 /******************************
  SLIDE 3 : One Man X
 *******************************/
-#onemanx{
+/*#onemanx{
 	background-color:#E0F0FF;
-	/*background-color:#D9CCFF;*/
-}
+	/*background-color:#D9CCFF;
+}*/
 #onemanx img:first-child{
 	position:absolute;
 top: 700px;
