@@ -18,7 +18,7 @@ var p = [], w=210, h=65,
 lk = {
 url:''||location.href, /*喜欢的URL(不含如分页等无关参数)*/
 title:''||document.title, /*喜欢标题(可选)*/
-description:'万门简介', /*喜欢简介(可选)*/
+description:'支持我们，就喜欢我们！', /*喜欢简介(可选)*/
 image:'' /*喜欢相关图片的路径(可选)*/
 };
 for(var i in lk){
@@ -32,30 +32,31 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 <body>
 	
 		<div id="sidebar">
-			
-					<img class="onemanlogo" src="images/logo.png"> 
-					<img class="onemanlogo" src="images/motto.png">
+					<img class="onemanlogo" src="images/logopng.png"> 
+					<img class="onemanlogo" src="images/mottotext.png">
 				
 					<img class="onemanlogo" src="	images/renren_login.png">
 			<div class='onemanlogo'>
 				<ul class="navigation">
-					<li data-slide="1">首页 </li>
-					<li data-slide="2">万门大学各系</li>
-					<li data-slide="3">万门大学x</li>
-					<li data-slide="4">关于我们</li>
+					<li data-slide="1">何为万门</li>
+					<li data-slide="2">万门各院系 </li>
+					<li data-slide="3">万门x项目</li>
+					<li data-slide="4">加入万门</li>
 				</ul>
 			</div>
 			
 		</div>
 		<div id="content">
 			<div class="slide" id="home" data-slide="1" data-	stellar-	background-ratio="0.5">
-				<img width="100%" src="images/biglogo.png">
-				
+				<div class="wrapper">
+				<img width="80%" src="images/logopng.png" 
+				alt="patented logo">
+				</div>
 			</div><!--End Slide 1-->
 		
     		
 		
-			<div class="slide" id="departments" data-slide="2" data	-	stellar-background-ratio="0.5">
+			<div class="slide" id="departments" data-slide="2" data	-	stellar-background-ratio="2">
 				<div class="wrapper">
 		
 					<img width="80px" src="images/slide2/1.png" 	data-	stellar-ratio="3" data-stellar-vertical	-offset="-40	"alt="">
@@ -71,8 +72,8 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 		
 				</div>
 		
-				<span class="slideno">Departments 万门大学各系</span	>
-				<a class="button" data-slide="1" title=""></a>
+				<span class="slideno">Departments</span	>
+				<a class="button" data-slide="1" title="Back To Top"></a>
 		
 			</div><!--End Slide 2-->
 		
@@ -80,7 +81,8 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 		
 		
 		
-			<div class="slide" id="onemanx" data-slide="3" data-	stellar	-background-ratio="0.5">
+			<div class="slide" id="onemanx" data-slide="3" data-	stellar	-background-ratio="2">
+				<!--End Slide 
 				<div class="wrapper">
 				
 					<img src="images/slide3/freelance.png" data-	stellar	-ratio="1.4" data-stellar-vertical-	offset="-102"alt	="">
@@ -88,10 +90,17 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 					<img src="images/slide3/rockable.png" data-	stellar-	ratio="2.7" data-stellar-vertical-	offset="-200"alt=	"">
 					<img src="images/slide3/themeforest.png" data-		stellar-ratio="3" data-stellar-vertical-	offset="-	200"alt="">
 					<img src="images/slide3/tutshub.png" data-	stellar-	ratio="1" data-stellar-vertical-	offset="-200"alt=""	>
-					<img src="images/slide3/psdtuts.png" data-	stellar-	ratio="1.5" data-stellar-vertical-	offset="-200"alt=	"">
+					<img src="images/slide3/psdtuts.png" data-	stellar-	ratio="1.5" data-stellstar-vertical-	offset="-200"alt=	"">
+				</div>End Slide 4-->
+				<div class ="wrapper">
+					<a href="#" class="choice"> 华东 </a>
+					<a href="#" class="choice"> 华中 </a>
+					<a href="#" class="choice"> 华南 </a>
 				</div>
-		
-				<span class="slideno">One Man X 万门大学x项目</span>
+								<span class="parallaxbg">
+					万门x项目为学生组织的线下小组，现有以下三个区域：</span>
+
+				<span class="slideno">One Man X</span>
 				<a class="button" data-slide="1" title=""></a>
 		
 			</div><!--End Slide 3-->
@@ -101,12 +110,11 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 		
 		
 		
-			<div class="slide" id="aboutus" data-slide="4" data-	stellar	-background-ratio="0">
-				
-		
-				<span class="slideno">About Us 关于我们</span>
-				<span class="parallaxbg">Not sure if I like the 		parallel effect here... -Mimee
-					试一下写中文的字体，看有没有变化。</span>
+			<div class="slide" id="joinus" data-slide="4" data-	stellar	-background-ratio="0">
+				<span class="slideno">Join &nbsp; Us</span>
+				<span class="parallaxbg">
+					若你有兴趣加入万门的团队，请填写以下表格</span>
+
 				<a class="button" data-slide="1" title=""></a>
 		
 			</div><!--End Slide 4-->
