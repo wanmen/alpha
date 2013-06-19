@@ -1,4 +1,0 @@
-<h1 tal:content="title"> title </h1>
-<p tal:content="description |nothing"> description </p>
-
-<img tal:attributes="src url" />
