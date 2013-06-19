@@ -135,7 +135,11 @@ html,body{
 	left: 30%;
 	max-width: 70%;
 	max-height:70%;
+<<<<<<< HEAD
+	width:auto;
+=======
 	width:70%;
+>>>>>>> 64b46321bd057a7efdc855804577072fbd4bfc3d
 	vertical-align: middle;
 
 }
