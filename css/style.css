@@ -150,18 +150,18 @@ html,body{
 	width:78%;
 	height:100%;
 	position: relative;
-	background-image: linear-gradient(left top, rgba(64,168,255,0.4) 74%, rgba(74,172,242,0.4) 23%);
-background-image: -o-linear-gradient(left top, rgba(64,168,255,0.4) 74%, rgba(74,172,242,0.4) 23%);
-background-image: -moz-linear-gradient(left top, rgba(64,168,255,0.4) 74%, rgba(74,172,242,0.4) 23%);
-background-image: -webkit-linear-gradient(left top, rgba(64,168,255,0.4) 74%, rgba(74,172,242,0.4) 23%);
-background-image: -ms-linear-gradient(left top, rgba(64,168,255,0.4) 74%, rgba(74,172,242,0.4) 23%);
+background-image: linear-gradient(bottom, rgb(130,199,242) 24%, rgb(147,206,238) 71%);
+background-image: -o-linear-gradient(bottom, rgb(130,199,242) 24%, rgb(147,206,238) 71%);
+background-image: -moz-linear-gradient(bottom, rgb(130,199,242) 24%, rgb(147,206,238) 71%);
+background-image: -webkit-linear-gradient(bottom, rgb(130,199,242) 24%, rgb(147,206,238) 71%);
+background-image: -ms-linear-gradient(bottom, rgb(130,199,242) 24%, rgb(147,206,238) 71%);
 
 background-image: -webkit-gradient(
 	linear,
-	left top,
 	right bottom,
-	color-stop(0.24, rgb(128,219,242)),
-	color-stop(0.71, rgb(106,210,242))
+	right top,
+	color-stop(0.24, rgb(130,199,242)),
+	color-stop(0.71, rgb(147,206,238))
 );
 
 	/*background-color: rgba(64,168,255,0.4);*/
