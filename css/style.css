@@ -135,7 +135,7 @@ html,body{
 	left: 30%;
 	max-width: 70%;
 	max-height:70%;
-	width:70%;
+	width:auto;
 	vertical-align: middle;
 
 }
