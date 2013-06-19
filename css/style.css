@@ -1,6 +1,37 @@
+/* CSS Document
+ * Based on parallax template 
+ * and Standard Han template
+ * Modified by Mimee on 14 Jun, 2013 
+ */
 @charset "utf-8";
-/* CSS Document */
-/* Modified by Mimee on 14 Jun, 2013 */
+
+/* 漢字標準格式
+ * Standard Han Format
+ *
+ * Version: 1.2
+ * Lisence: MIT Lisence
+ * Last-Modified: 2011/12/22
+ */
+
+/* 手動設定字體 */
+/* 漢字手寫體（cursive） */
+@font-face {
+    font-family: 'ff-han';
+    src: local(STFangsong), local(STKaiti), local(Kai), local("標楷體"), local(DFKaiShu-SB-Estd-BF);
+    unicode-range: U+4E00-9FA5;
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'bf-han';
+    src: local(STHeiti), local(SimHei), local(STXihei);
+    unicode-range: U+4E00-9FA5;
+    font-weight: normal;
+    font-style: normal;
+
+}
 
 @font-face {
     font-family: 'BebasRegular';
@@ -14,44 +45,87 @@
 
 }
 html,body{
- font-family: 'BebasRegular';
+ font-family:'BebasRegular';
 	width:100%;
 	height:100%;
 }
+#awrapper {
+    width:100%;
+    overflow:hidden;
+}
+#sidebar {
+    float:left;
+    width:22%;
+    height:100%;
+    position:fixed;
+    z-index:100;}
+
+#sidebar{
+	background-image: linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+	background-image: -o-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+	background-image: -moz-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+	background-image: -webkit-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+	background-image: -ms-linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		right top,
+		color-stop(0.37, rgb(200,229,255)),
+		color-stop(0.69, rgb(224,240,255)));
+/*}
+    background-color:#E0F0FF;
+*/	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
+}
+
+.onemanlogo{
+	position:relative;
+	top:10px;
+	left:15%;
+	width:70%;
+	margin-top:0px;
+	margin-left:0px;
+	z-index:1;
+	opacity: 0.9;
+}
 
 .navigation{
-	position:fixed;
+	position:absolute;
 	z-index:1;
-	top:200px;
-	background-color: rgba(100,100,100,0.2);
+	top:10px;
+	width:100%;
 }
 .navigation li{
+	font-family:'ff-han';/*could be bf*/
 	color:#0066CC;
 	display:block;
 	padding: 0 10px;
 	line-height:30px;
 	margin-bottom:2px;
 	font-weight:bold;
-	-webkit-transition: all .2s ease－in－out;
-	/*border-bottom:1px solid black;
-	text-align:left;
-	width:170px;*/
+	-webkit-transition: all .5s ease－in－out;
+	/*border-bottom:1px solid black;*/
+	text-align:right;
+	/*width:170px;*/
 }
 .navigation li:hover,.active{
-	font-size:25px;
+	font-size:24pt;
 	cursor:pointer;
 	-webkit-transition: all .2s ease－in－out;
-	width:100px!important;
+	width:100%!important;
 }
-.loginPanel{
-	position:fixed;
-	top:350px;
-	left:10px;
-	width:150px;
-	margin-top:0px;
-	margin-left:0px;
-	z-index:1;
+/*****
+ * Content starts here
+ * with parallax effect
+ */
+#content {
+    margin: 0 0 0 0px;
+    position:relative;
+    height:100%;
 }
+/*div {
+    border:1px transparent;
+}*/
 .likePanel{
 	position:fixed;
 	top:20px;
@@ -60,53 +134,60 @@ html,body{
 	z-index:1;
 }
 
-.videoFrame{
+.centralFrame{
 	position:relative;
 	top:10%;
-	left:20%;
-	height:80%;
+	left: 30%;
+	max-height:70%;
 	width:70%;
+	vertical-align: middle;
+
 }
 
-.loginButton{
-	width: 100px;
-}
-.onemanlogo{
-	position:fixed;
-	top:10px;
-	left:10px;
-	width:100px;
-	margin-top:0px;
-	margin-left:0px;
-	z-index:1;
-	opacity: 0.4;
-}
 .slide{
+	float:right;
+	font-family:'BebasRegular','ff-han';
 	background-attachment: fixed;
-	width:100%;
+	width:78%;
 	height:100%;
 	position: relative;
+	background-image: linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -o-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -moz-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -ms-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left top,
+		color-stop(0.36, rgb(190,229,250)),
+		color-stop(0.71, rgb(147,206,238))
+	);
+	/*background-color: rgba(64,168,255,0.4);*/
+	/*rgb(26,70,137);*/
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 .wrapper{
-	width:960px;
-	height:200px;
+	top:0px;
+	width:100%;
 	margin:0 auto;
-	position:relative;
+	position:center;
 }
 .slideno{
+	font-family:'BebasRegular','ff-han';
 	position:absolute;
 	bottom:0px;
-	left:0px;
-	font-size:100px;
+	left:5px;
+	font-size:72pt;
 	font-weight:bold;
-	color:rgba(255,255,255,0.3);
+	color:rgba(255,255,255,0.5);
 }
 .button{
 	display:block;
 	width:50px;
 	height:50px;
-	position:absolute;
+	position:fixed;
 	bottom:0px;
 	left:90%;
 	background-color:#222222;
@@ -117,24 +198,54 @@ html,body{
 	cursor:pointer;
 }
 
+.choice {
+	-moz-box-shadow:inset -32px 16px 46px -34px #bbdaf7;
+	-webkit-box-shadow:inset -32px 16px 46px -34px #bbdaf7;
+	box-shadow:inset -32px 16px 46px -34px #bbdaf7;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #79bbff), color-stop(1, #378de5) );
+	background:-moz-linear-gradient( center top, #79bbff 5%, #378de5 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#79bbff', endColorstr='#378de5');
+	background-color:#79bbff;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:3px solid #88b1db;
+	display:inline-block;
+	color:#ffffff;
+	font-family:"ff-han";
+	font-size:46px;
+	font-weight:normal;
+	padding:21px 9px;
+	text-decoration:none;
+	text-shadow:2px 3px 0px #528ecc;
+}.choice:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #378de5), color-stop(1, #79bbff) );
+	background:-moz-linear-gradient( center top, #378de5 5%, #79bbff 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#378de5', endColorstr='#79bbff');
+	background-color:#378de5;
+}.choice:active {
+	position:relative;
+	top:1px;
+}
+
 /******************************
  SLIDE 1: Home 
 *******************************/
 #home{
-	background-color:#E0F0FF;
-	
+	background-color: rgba(64,168,255,0.4);
 }
 /******************************
  SLIDE 2: Departments
 *******************************/
-#departments{
-	background-color:#8FABFF;
+/*#departments{
+	background-color:#E0F0FF;
+	/*background-color:#8FABFF;
 	
-}
+}*/
 #departments img:first-child{
 	position:absolute;
-top: 700px;
-left: -150px;
+	top: 700px;
+	left: -150px;
 }
 #departments img:nth-child(2){
 	position:absolute;
@@ -174,10 +285,40 @@ left: -150px;
 /******************************
  SLIDE 3 : One Man X
 *******************************/
-#onemanx{
-	background-color:#D9CCFF;
+
+
+/* This imageless css button was generated by CSSButtonGenerator.com */
+
+
+/*#onemanx{
+	background-color:#E0F0FF;
+	/*background-color:#D9CCFF;
+}*/
+
+#onemanx .choice:first-child{
+	position: absolute;
+	top: 300px;
+	left: 160px;
 }
-#onemanx img:first-child{
+#onemanx .choice:nth-child(2){
+	position: absolute;
+	top: 300px;
+	left: 350px;
+}
+#onemanx .choice:nth-child(3){
+	position: absolute;
+	top: 300px;
+	left: 540px;
+}
+
+#onemanx .parallaxbg{
+	position:absolute;
+	right:40px;
+	top:40px;
+	font-size:48px;
+	color:rgba(51,51,51,0.3);
+}
+/*#onemanx img:first-child{
 	position:absolute;
 top: 700px;
 left: 300px;
@@ -206,23 +347,83 @@ left: 300px;
 	position:absolute;
 	top:100px;
 	right:300px;
-}
+}*/
 /******************************
  SLIDE 4 
 *******************************/
 
-#aboutus{
-	background-image:url(../images/Slide4/desktopabout.png);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
+#joinus{
+	background-image:url(../images/Slide4/name.png);
+	-webkit-background-size: fill;
+	-moz-background-size: fill;
+	-o-background-size: fill;
+	background-size: fill;
+	opacity:0.3;
+    filter:alpha(opacity=30); /* For IE8 and earlier */
 }
-#aboutus .parallaxbg{
+#joinus .parallaxbg{
 	position:absolute;
 	right:40px;
 	top:40px;
 	font-size:28px;
-	color:rgba(51,51,51,0.3);
+	color:rgba(51,51,51,0.7);
 }
 
+/*#joinus img:first-child{
+	position:absolute;
+	top: 700px;
+	left: -150px;
+}
+#joinus img:nth-child(2){
+	position:absolute;
+	top:300px;
+	left:100px;
+}
+#joinus img:nth-child(3){
+	position:absolute;
+	top:600px;
+	left:300px;
+}
+#joinus img:nth-child(4){
+	position:absolute;
+	top:400px;
+	right:200px;
+}
+#joinus img:nth-child(5){
+	position:absolute;
+	top:200px;
+	right:500px;
+}
+#joinus img:nth-child(6){
+	position:absolute;
+	top:600px;
+	right:300px;
+}
+#joinus img:nth-child(7){
+	position:absolute;
+	top:400px;
+	right:100px;
+}
+#joinus img:nth-child(8){
+	position:absolute;
+	top:100px;
+	right:300px;
+}
+#joinus .transbox
+  {
+  position: absolute;
+  vertical-align: middle;
+  width:80%;
+  height:80%;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier 
+  }
+#joinus .transbox p
+  {
+  margin:30px 40px;
+  font-weight:bold;
+  color:#000000;
+  }
+*/
