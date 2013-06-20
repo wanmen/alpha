@@ -58,7 +58,7 @@ html,body{
     width:22%;
     height:100%;
     position:fixed;
-    z-index:100;}
+    z-index:1;}
 
 #sidebar{
 	background-image: linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
@@ -123,12 +123,18 @@ html,body{
 }
 .likePanel{
 	position:fixed;
-	top:20px;
-	right:10px;
-	width:150px;
+	top:90%;
+	left:10px;
+	width:300px;
 	z-index:1;
 }
-
+.sharePanel{
+	position:fixed;
+	top:5%;
+	left:80%;
+	width:300px;
+	z-index:1;
+}
 .centralFrame{
 	position:relative;
 	top:10%;
