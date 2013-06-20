@@ -17,8 +17,9 @@
 /* 漢字手寫體（cursive） */
 @font-face {
     font-family: 'ff-han';
-    src: local(STFangsong), local(STKaiti), local(Kai), local("標楷體"), local(DFKaiShu-SB-Estd-BF);
-    unicode-range: U+4E00-9FA5;
+    src: local("Hiragino Sans GB");
+    /*src: local(STFangsong), local(STKaiti), local(Kai), local("標楷體"), local(DFKaiShu-SB-Estd-BF);
+    unicode-range: U+4E00-9FA5;*/
     font-weight: normal;
     font-style: normal;
 
@@ -138,7 +139,7 @@ html,body{
 .centralFrame{
 	position:relative;
 	top:10%;
-	left: 30%;
+	left: 10%;
 	max-width: 70%;
 	max-height:70%;
 	width:70%;
@@ -171,6 +172,7 @@ html,body{
 .wrapper{
 	top:0px;
 	width:100%;
+	max-height: 100%;
 	margin:0 auto;
 	position:center;
 }
@@ -234,6 +236,15 @@ html,body{
 #home{
 	background-color: rgba(64,168,255,0.4);
 }
+#home .parallaxbg{
+	position:absolute;
+	left:20px;
+	right:20px;
+	top:40px;
+	font-size:36px;
+	color:rgba(0,86,161,0.9);
+}
+
 /******************************
  SLIDE 2: Departments
 *******************************/
@@ -255,10 +266,11 @@ html,body{
 
 #departments .parallaxbg{
 	position:absolute;
-	right:40px;
+	left:20px;
+	right:20px;
 	top:40px;
 	font-size:48px;
-	color:rgba(51,51,51,0.3);
+	color:rgba(0,86,161,0.9);
 }
 
 /******************************
@@ -284,10 +296,11 @@ html,body{
 
 #onemanx .parallaxbg{
 	position:absolute;
-	right:40px;
+	left: 20px;
+	right:20px;
 	top:40px;
 	font-size:48px;
-	color:rgba(70,192,255,0.9);
+	color:rgba(0,86,161,0.9);
 }
 /*#onemanx img:first-child{
 	position:absolute;
@@ -335,7 +348,8 @@ left: 300px;
 }
 #joinus .parallaxbg{
 	position:absolute;
-	right:40px;
+	left: 20px;
+	right:20px;
 	top:40px;
 	font-size:28px;
 	color:rgba(51,51,51,0.7);
@@ -365,7 +379,7 @@ left: 300px;
 #joinus img:nth-child(5){
 	position:absolute;
 	top:200px;
-	right:500px;
+	right:400px;
 }
 #joinus img:nth-child(6){
 	position:absolute;
