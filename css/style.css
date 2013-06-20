@@ -317,14 +317,15 @@ left: 300px;
  SLIDE 4 
 *******************************/
 
+
 #joinus{
 	background-image:url(../images/Slide4/name.png);
 	-webkit-background-size: fill;
 	-moz-background-size: fill;
 	-o-background-size: fill;
 	background-size: fill;
-	opacity:0.3;
-    filter:alpha(opacity=30); /* For IE8 and earlier */
+	opacity:0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
 }
 #joinus .parallaxbg{
 	position:absolute;
@@ -347,8 +348,8 @@ left: 300px;
 }
 #joinus img:nth-child(3){
 	position:absolute;
-	top:600px;
-	left:300px;
+	top:40px;
+	left:20px;
 }
 #joinus img:nth-child(4){
 	position:absolute;
@@ -362,12 +363,12 @@ left: 300px;
 }
 #joinus img:nth-child(6){
 	position:absolute;
-	top:600px;
+	top:200px;
 	right:300px;
 }
 #joinus img:nth-child(7){
 	position:absolute;
-	top:400px;
+	top:150px;
 	right:100px;
 }
 #joinus img:nth-child(8){
