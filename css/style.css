@@ -113,7 +113,15 @@ html,body{
 	-webkit-transition: all .2s ease－in－out;
 	width:100%!important;
 }
-/*****
+
+.likePanel{
+	position:fixed;
+	top:90%;
+	left:10px;
+	width:300px;
+	z-index:1;
+}
+/**
  * Content starts here
  * with parallax effect
  */
@@ -122,13 +130,9 @@ html,body{
     position:relative;
     height:100%;
 }
-.likePanel{
-	position:fixed;
-	top:90%;
-	left:10px;
-	width:300px;
-	z-index:1;
-}
+/**
+ * Sharing on platforms
+ */
 .sharePanel{
 	position:fixed;
 	top:5%;
@@ -136,6 +140,9 @@ html,body{
 	width:300px;
 	z-index:1;
 }
+/**
+ * Frame for pretty images
+ */
 .centralFrame{
 	position:relative;
 	top:10%;
@@ -147,6 +154,9 @@ html,body{
 
 }
 
+/**
+ * Slides that auto-adjust make up content.
+ */
 .slide{
 	float:right;
 	font-family:'BebasRegular','ff-han';
@@ -169,6 +179,10 @@ html,body{
 	);
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
+
+/**
+ * Wrapper for content, such as lists
+ */
 .wrapper{
 	top:0px;
 	width:100%;
@@ -176,6 +190,9 @@ html,body{
 	margin:0 auto;
 	position:center;
 }
+/**
+ * Slide notes that appear on the buttom.
+ */
 .slideno{
 	font-family:'BebasRegular','ff-han';
 	position:absolute;
@@ -185,6 +202,9 @@ html,body{
 	font-weight:bold;
 	color:rgba(255,255,255,0.5);
 }
+/**
+ * Button to scroll back to the front page.
+ */
 .button{
 	display:block;
 	width:50px;
@@ -200,6 +220,9 @@ html,body{
 	cursor:pointer;
 }
 
+/**
+ * Just in case we need buttons for content
+ */
 .choice {
 	-moz-box-shadow:inset -32px 16px 46px -34px #bbdaf7;
 	-webkit-box-shadow:inset -32px 16px 46px -34px #bbdaf7;

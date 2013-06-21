@@ -1,5 +1,6 @@
 <!DOCTYPE HTML>
 <html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
 <head>
 <meta charset="utf-8">
 <title>万门大学</title>
@@ -7,6 +8,16 @@
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/circle-menu.css" />
+<!--新浪微博赞-->
+<meta property="og:type" content="webpage" />
+<meta property="og:url" content="wanmendaxue.org" />
+<meta property="og:title" content="万门大学" />
+<meta property="og:description" content="中国学生的网络大学" />
+<!--选填
+<meta property="og:image" content="网页的显示图片" />
+<meta name="weibo:webpage:create_at" content="网页的创建时间" />
+<meta name="weibo:webpage:update_at" content="网页的更新时间" /-->
+
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/jQuery.circleMenu.js"></script>
@@ -14,12 +25,17 @@
 <script type="text/javascript" src="js/waypoints.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
 <script type="text/javascript" src="js/pastein.js"></script>
+
+<script type="text/javascript" src="http://widget.renren.com/js/rrshare.js"></script>
 <script>
  $(function(){	$('#science').circleMenu({direction:'right', trigger:'hover', step_in: 0, step_out: 0});
  				$('#arts').circleMenu({direction:'full', trigger:'hover', step_in: 300, step_out: 300});
 				$('#others').circleMenu({direction:'full', trigger:'hover', step_in: -100, step_out: -100});
              });
 </script>
+
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
 
 </head>
 
@@ -40,7 +56,10 @@
 				</ul>
 			</div>
 			<div class="likePanel">
-				<!-- JiaThis Button BEGIN -->
+				<wb:like></wb:like>
+				<script type="text/javascript" charset="utf-8" src="js/like.js"></script>
+
+				<!-- JiaThis Button BEGIN 
 				<div class="jiathis_style">
 					<a class="jiathis_like_tsina" data="width=120"></a>
 					<a class="jiathis_like_renren" data="width=100"></a>
@@ -50,7 +69,8 @@
 			</div>	
 		</div>
 		<div class="sharePanel">
-			<!-- JiaThis Button BEGIN -->
+			<xn:share-button type="button_count_right" label="分享万门 Y(^_^)Y" href="http://www.wanmendaxue.com"></xn:share-button>
+			<!-- JiaThis Button BEGIN -
 			<div class="jiathis_style">
 			<a class="jiathis_button_tsina"></a>
 			<a class="jiathis_button_renren"></a>
@@ -67,6 +87,21 @@
 			</script>
 			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
 			<!-- JiaThis Button END -->
+
+<a name="xn_share" onclick="shareClick()" type="icon" href="javascript:;"></a>
+<script type="text/javascript">
+	function shareClick() {
+		var rrShareParam = {
+			resourceUrl : '',	//分享的资源Url
+			srcUrl : '',	//分享的资源来源Url,默认为header中的Referer,如果分享失败可以调整此值为resourceUrl试试
+			pic : '',		//分享的主题图片Url
+			title : '万门大学-你是你的大学',		//分享的标题
+			description : '万门大学是中国学生的网络大学，提供在线教育，无门槛，免费。'	//分享的详细描述
+		};
+		rrShareOnclick(rrShareParam);
+	}
+</script>
+
 		</div>
 		<div id="content">
 			<div class="slide" id="home" data-slide="1" data-	stellar-	background-ratio="0.5">
