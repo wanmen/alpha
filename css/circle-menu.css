@@ -1,0 +1,98 @@
+﻿.menu li:first-child {
+    background:rgba(0,0,0,0.4);
+    font-weight:bold;
+    font-family:arial black;
+    font-size:25px;
+   /* background:url(../images/science.png);*/
+    border-color: #fff;
+    border-width: 2px;
+    border-style: solid;
+    box-shadow: 0 0 2px 1px #aaa;
+}
+.menu li {
+    background:rgba(20,255,255,0.2);
+    color:#fff;
+    font-size:25px;
+}
+.menu a{
+    text-decoration: none;
+    color:#fff;
+}
+#science{
+    position:relative;
+    left:20%;
+    top:50%;
+}
+
+#arts{
+    position:relative;
+    left:45%;
+    top:50%;
+    -webkit-transform-origin: 17px 17px;
+    -moz-transform-origin: 17px 17px;
+    -o-transform-origin: 17px 17px;
+    transform-origin: 17px 17px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#others{
+    position:relative;
+    left:70%;
+    top:50%;
+    -webkit-transform-origin: 17px 17px;
+    -moz-transform-origin: 17px 17px;
+    -o-transform-origin: 17px 17px;
+    transform-origin: 17px 17px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#science{
+    -webkit-transform-origin: 17px 17px;
+    -moz-transform-origin: 17px 17px;
+    -o-transform-origin: 17px 17px;
+    transform-origin: 17px 17px;
+
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+#science.circleMenu-open {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+#science.circleMenu-open > li:first-child {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+:not(#science).circleMenu-open > li:first-child {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+}

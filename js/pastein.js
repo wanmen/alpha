@@ -3,8 +3,6 @@
  * Currently includes Renren Like, Google Analytics.
  * Todo: renren sharing and weibo sharing.
  */
-
-<script type="text/javascript" charset="utf-8">/*人人喜欢*/
 (function(){
 var p = [], w=210, h=65,
 lk = {
@@ -18,9 +16,6 @@ p.push(i + '=' + encodeURIComponent(lk[i]||''));
 }
 document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://www.connect.renren.com/like/v2?'+p.join('&')+'" style="width:'+w+'px;height:'+h+'px;"></iframe></div>');
 })();
-</script>
-
-<script type="text/javascript"> /*Google Analytics*/
 
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-41886368-1']);
@@ -31,5 +26,3 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
-
-</script>
