@@ -322,7 +322,10 @@ html,body{
 /******************************
  SLIDE 3 : One Man X
 *******************************/
-
+#onemanc{
+	opacity: 0.4;
+    filter:alpha(opacity=40); /* For IE8 and earlier */
+}
 
 #onemanx .choice:first-child{
 	position: absolute;
@@ -348,36 +351,7 @@ html,body{
 	font-size:48px;
 	color:rgba(0,86,161,0.9);
 }
-/*#onemanx img:first-child{
-	position:absolute;
-top: 700px;
-left: 300px;
-}
-#onemanx img:nth-child(2){
-	position:absolute;
-	top:100px;
-	left:100px;
-}
-#onemanx img:nth-child(3){
-	position:absolute;
-	top:150px;
-	left:300px;
-}
-#onemanx img:nth-child(4){
-	position:absolute;
-	top:450px;
-	left:300px;
-}
-#onemanx img:nth-child(5){
-	position:absolute;
-	top:200px;
-	right:300px;
-}
-#onemanx img:nth-child(6){
-	position:absolute;
-	top:100px;
-	right:300px;
-}*/
+
 /******************************
  SLIDE 4 
 *******************************/
@@ -443,7 +417,6 @@ left: 300px;
 	right:0px;
 	top:0px;
 	background-color: rgba(163,172,225,0.3);
-	/*top:90%;*/
 	width:120px;
 	z-index:1;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
