@@ -1,32 +1,42 @@
 <!DOCTYPE HTML>
 <html>
+<html xmlns:wb=“http://open.weibo.com/wb”>
 <head>
 <meta charset="utf-8">
 <title>万门大学</title>
 
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
+<link rel="stylesheet" type="text/css" href="css/circle-menu.css" />
+<!--新浪微博赞-->
+<meta property="og:type" content="webpage" />
+<meta property="og:url" content="wanmendaxue.org" />
+<meta property="og:title" content="万门大学" />
+<meta property="og:description" content="中国学生的网络大学" />
+<!--选填
+<meta property="og:image" content="网页的显示图片" />
+<meta name="weibo:webpage:create_at" content="网页的创建时间" />
+<meta name="weibo:webpage:update_at" content="网页的更新时间" /-->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
+<script type="text/javascript" src="js/jQuery.circleMenu.js"></script>
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="js/waypoints.min.js"></script>
 <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" charset="utf-8">
-(function(){
-var p = [], w=210, h=65,
-lk = {
-url:''||location.href, /*喜欢的URL(不含如分页等无关参数)*/
-title:''||document.title, /*喜欢标题(可选)*/
-description:'支持我们，就喜欢我们！', /*喜欢简介(可选)*/
-image:'' /*喜欢相关图片的路径(可选)*/
-};
-for(var i in lk){
-p.push(i + '=' + encodeURIComponent(lk[i]||''));
-}
-document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://www.connect.renren.com/like/v2?'+p.join('&')+'" style="width:'+w+'px;height:'+h+'px;"></iframe></div>');
-})();
+<script type="text/javascript" src="js/pastein.js"></script>
+
+<script type="text/javascript" src="http://widget.renren.com/js/rrshare.js"></script>
+<script>
+ $(function(){	$('#science').circleMenu({direction:'right', trigger:'hover', step_in: 0, step_out: 0});
+ 				$('#arts').circleMenu({direction:'full', trigger:'hover', step_in: 300, step_out: 300});
+				$('#others').circleMenu({direction:'full', trigger:'hover', step_in: -100, step_out: -100});
+             });
 </script>
+
+<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+
+
 </head>
 
 <body>
@@ -36,45 +46,79 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 					<img class="onemanlogo" src="images/logopng.png"> 
 					<img class="onemanlogo" src="images/mottotext.png">
 				
-					<img class="onemanlogo" src="	images/renren_login.png">
+					<!--We don't want it, for now: img class="onemanlogo" src="	images/renren_login.png"-->
 			<div class='onemanlogo'>
 				<ul class="navigation">
 					<li data-slide="1">何为万门</li>
 					<li data-slide="2">万门各院系 </li>
 					<li data-slide="3">万门x项目</li>
-					<li data-slide="4">加入万门</li>
+					<li data-slide="4">万门团队</li>
 				</ul>
 			</div>
-			
 		</div>
+
 		<div id="content">
 			<div class="slide" id="home" data-slide="1" data-	stellar-	background-ratio="0.5">
 				<div class="centralFrame">
+				<span class="parallaxbg">
+					<p>万门大学是免费的网络大学，致力于降低中国高等教育门槛。</p>
+					<p>万门大学分学科为自学者提供培养计划及教材，有高中基础即可无门槛自学，并将逐步推出中文视频课堂免费发布。</p>
+				</span>
+				<!--div class="centralFrame">
 				<img width="50%" src="images/logopng.png" 
-				alt="patented logo">
+				alt="patented logo"-->
 				</div>
 			</div><!--End Slide 1-->
 		
     		
 		
 			<div class="slide" id="departments" data-slide="2" data	-	stellar-background-ratio="2">
-				<div class="wrapper">
-		
-					<img width="80px" src="images/slide2/1.png" 	data-	stellar-ratio="3" data-stellar-vertical	-offset="-40	"alt="">
-					<img width="80px" src="images/slide2/2.png" 	data-	stellar-ratio="1" data-stellar-vertical	-offset="-	102"alt="">
-					<img width="100px" src="images/slide2/3.png" 	data-	stellar-ratio="1.5" data-stellar-	vertical-offset="-	53"alt="">
-					<img width="100px" src="images/slide2/4.png" 	data-	stellar-ratio="4" data-stellar-vertical-	offset="-25	"alt="">
-					<img width="200px" src="images/slide2/0.png" 	data-	stellar-ratio="2" data-stellar-vertical-	offset="-50	"alt="">
-					<img width="100px" src="images/slide2/1.png" 	data-	stellar-ratio="2.7" data-stellar-	vertical-offset="-	25"alt="">
-					<img src="images/slide2/blur-ball.png" data-	stellar	-ratio="3" data-stellar-vertical-offset	="-55"alt=""	>
-					<img src="images/slide2/blur-ball-big.png" data	-	stellar-ratio="1" data-stellar-vertical-	offset="-	102"alt="">
-					<img src="images/slide2/focus-ball.png" data-		stellar-ratio="1.5" data-stellar-vertical-	offset="-	53"alt="">
-					<img src="images/slide2/small-ball.png" data-		stellar-ratio="2.7" data-stellar-vertical-	offset="-	25"alt="">	
-		
-				</div>
-		
+				
+				<!--div class ="wrapper">
+					<a href="#" class="choice"> 理工 </a>
+					<a href="#" class="choice"> 文史 </a>
+					<a href="#" class="choice"> 其他 </a>
+				/div-->
+				<span class="parallaxbg">
+					万门大学现网上分享学习40余专业的学习资源。请从下面选择你感兴趣的学科领域,重拾缺失已久的大学精神：
+				</span>
+				<ul class="menu" id="science">
+				  <li><a href="#">理工</a></li>
+				  <li>
+				  	<ul class="menu">
+				 		 <li><a href="#">理科</a></li>
+				 		 <li><a href="#">物理</a></li>
+				 		 <li><a href="#">数学</a></li>
+				 		 <li><a href="#">化学</a></li>
+				 		 <li><a href="#">生物</a></li>
+				    </ul>
+				  </li>
+				  <li>
+				  	<ul class="menu">
+				 		 <li><a href="#">工科</a></li>
+				 		 <li><a href="#">电子</a></li>
+				 		 <li><a href="#">计算机</a></li>
+				 		 <li><a href="#">机械</a></li>
+				    </ul>
+				  </li>
+				</ul>
+				<ul class="menu" id="arts">
+				  <li><a href="#">文史</a></li>
+				  <li><a href="#">中文</a></li>
+				  <li><a href="#">英语</a></li>
+				  <li><a href="#">心理学</a></li>
+				  <li><a href="#">法语</a></li>
+				  <li><a href="#">历史</a></li>
+				</ul>
+				<ul class="menu" id="others">
+				  <li><a href="#">其他</a></li>
+				  <li><a href="#">摄影</a></li>
+				  <li><a href="#">绘画</a></li>
+				  <li><a href="#">舞蹈</a></li>
+				  <li><a href="#">声乐</a></li>
+				</ul>
 				<span class="slideno">Departments</span	>
-				<a class="button" data-slide="1" title="Back To Top"></a>
+				<a class="button1" data-slide="1" title="Back To Top"></a>
 		
 			</div><!--End Slide 2-->
 		
@@ -83,6 +127,8 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 		
 		
 			<div class="slide" id="onemanx" data-slide="3" data-	stellar	-background-ratio="2">
+				
+
 				<!--End Slide 
 				<div class="wrapper">
 				
@@ -93,16 +139,15 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 					<img src="images/slide3/tutshub.png" data-	stellar-	ratio="1" data-stellar-vertical-	offset="-200"alt=""	>
 					<img src="images/slide3/psdtuts.png" data-	stellar-	ratio="1.5" data-stellstar-vertical-	offset="-200"alt=	"">
 				</div>End Slide 4-->
-				<div class ="wrapper">
+				<!--div class ="wrapper">
 					<a href="#" class="choice"> 华东 </a>
 					<a href="#" class="choice"> 华中 </a>
 					<a href="#" class="choice"> 华南 </a>
-				</div>
-								<span class="parallaxbg">
-					万门x项目为学生组织的线下小组，现有以下三个区域：</span>
-
+				</div-->
+				<span class="parallaxbg">
+					万门x项目为全国各地学生组织的线下讨论小组，现覆盖以下三个区域：</span>
 				<span class="slideno">One Man X</span>
-				<a class="button" data-slide="1" title=""></a>
+				<a class="button1" data-slide="1" title=""></a>
 		
 			</div><!--End Slide 3-->
 		
@@ -116,13 +161,86 @@ document.write('<div class="likePanel"> <iframe scrolling="no" frameborder="0" a
 				<span class="parallaxbg">
 					若你有兴趣加入万门的团队，请填写以下表格</span>
 
-				<a class="button" data-slide="1" title=""></a>
+				<div class="wrapper">
+		
+					<img width="80px" src="images/slide2/1.png" 	data-	stellar-ratio="3" data-stellar-vertical	-offset="-30	"alt="">
+					<img width="100px" src="images/slide2/2.png" 	data-	stellar-ratio="1" data-stellar-vertical	-offset="-	22"alt="晓楠">
+					<img width="150px" src="images/slide2/3.png" 	data-	stellar-ratio="1.5" data-stellar-	vertical-offset="-	53"alt="绍欢">
+					<img width="120px" src="images/slide2/4.png" 	data-	stellar-ratio="1" data-stellar-vertical-	offset="-25	"alt="昕磊">
+					<img width="200px" src="images/slide2/0.png" 	data-	stellar-ratio="2" data-stellar-vertical-	offset="-50	"alt="童哲">
+					<img width="100px" src="images/slide2/1.png" 	data-	stellar-ratio="2.7" data-stellar-	vertical-offset="-	25"alt="">
+					<img width="100px" src="images/slide2/taox.jpeg" data-	stellar	-ratio="3" data-stellar-vertical-offset	="-55"alt=""	>
+					<!--img src="images/slide2/blur-ball-big.png" data	-	stellar-ratio="1" data-stellar-vertical-	offset="-	102"alt="">
+					<img src="images/slide2/focus-ball.png" data-		stellar-ratio="1.5" data-stellar-vertical-	offset="-	53"alt="">
+					<img src="images/slide2/small-ball.png" data-		stellar-ratio="2.7" data-stellar-vertical-	offset="-	25"alt=""-->	
+				</div><!--end of wrapper-->
+
+				<a class="button1" data-slide="1" title=""></a>
+
+				<!--div class="sharePanel">
+		    	<script type="text/javascript" charset="utf-8" src="js/share.js"    ></script>
+		    	<xn:share-button type="button_count_right" label="分享万门 Y(^_^)    Y" href="http://www.wanmendaxue.com"></xn:share-button>
+		    </div-->
+
+			<!--JiaThis Button BEGIN -
+			<div class="jiathis_style">
+			<a class="jiathis_button_tsina"></a>
+			<a class="jiathis_button_renren"></a>
+			<a class="jiathis_button_douban"></a>
+			<a class="jiathis_button_qzone"></a>
+			<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+			<a class="jiathis_counter_style"></a>
+			</div>
+			<script type="text/javascript" >
+			var jiathis_config={
+				summary:"",
+				hideMore:false
+			}
+			</script>
+			<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+			<!-- JiaThis Button END-->
+
+
+           <!--Like Panel that loads last-->
+            <div class="likePanel">
+            	分享万门 Y(^_^)Y
+	            <script type="text/javascript" charset="utf-8" src="js/share.js"    ></script>
+	            <a name="xn_share" onclick="shareClick()" type="button_large" href="javascript:;"></a>
+                <wb:share-button count="n" type="button" size="middle" relateuid="3274625642" ></wb:share-button>
+                喜欢我们 ^o^
+				<wb:like type="number" skin="silver"></wb:like>
+
+				<!-- JiaThis Button BEGIN 
+				<div class="jiathis_style">
+					<a class="jiathis_like_tsina" data="width=120"></a>
+					<a class="jiathis_like_renren" data="width=100"></a>
+				</div>
+				<script type="text/javascript" src="http://v3.jiathis.com/code_mini/jia.js?uid=1371723631768777" charset="utf-8"></script>
+				<!-- JiaThis Button END -->
+				<!--xn:share-button type="button_count_right" label="分享万门 Y(^_^)Y"></xn:share-button-->
+				<script type="text/javascript" charset="utf-8">
+(function(){
+var p = [], w=130, h=24,
+lk = {
+url:''||location.href, /*喜欢的URL(不含如分页等无关参数)*/
+title:''||document.title, /*喜欢标题(可选)*/
+description:'', /*喜欢简介(可选)*/
+image:'' /*喜欢相关图片的路径(可选)*/
+};
+for(var i in lk){
+p.push(i + '=' + encodeURIComponent(lk[i]||''));
+}
+document.write('<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://www.connect.renren.com/like/v2?'+p.join('&')+'" style="width:'+w+'px;height:'+h+'px;"></iframe>');
+})();
+</script>
+			</div>		
+
+		     
 		
 			</div><!--End Slide 4-->
 	
 		</div><!--End Content-->
-	
-			
+
 
 
 
