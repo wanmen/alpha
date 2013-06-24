@@ -255,7 +255,7 @@ html,body{
 	background-color: rgba(64,168,255,0.4);
 }
 #home{
-	background-image:url(../images/照片.jpg);
+	/*background-image:url(../images/bg.jpg);*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -384,7 +384,7 @@ left: 300px;
 
 
 #joinus{
-	background-image:url(../images/照片.jpg);
+	background-image:url(../images/bg.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
