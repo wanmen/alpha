@@ -4,10 +4,10 @@
 <head>
 <meta charset="utf-8">
 <title>万门大学</title>
-
 <link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css">
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/circle-menu.css" />
+<link rel="stylesheet" type="text/css" href="css/cloud.css">
 <!--新浪微博赞-->
 <meta property="og:type" content="webpage" />
 <meta property="og:url" content="wanmendaxue.org" />
@@ -58,7 +58,7 @@
 		</div>
 
 		<div id="content">
-			<div class="slide" id="home" data-slide="1" data-	stellar-	background-ratio="0.5">
+			<div class="slide" id="home" data-slide="1" data-stellar-background-ratio="0.5">
 				<div class="centralFrame">
 				<span class="parallaxbg">
 					<p>万门大学是免费的网络大学，致力于降低中国高等教育门槛。</p>
@@ -68,11 +68,15 @@
 				<img width="50%" src="images/logopng.png" 
 				alt="patented logo"-->
 				</div>
+				<div id="viewport" >
+					<div id="world" >
+					</div>
+				</div>
 			</div><!--End Slide 1-->
 		
     		
 		
-			<div class="slide" id="departments" data-slide="2" data	-	stellar-background-ratio="2">
+			<div class="slide" id="departments" data-slide="2" data-stellar-background-ratio="2">
 				
 				<!--div class ="wrapper">
 					<a href="#" class="choice"> 理工 </a>
@@ -126,7 +130,7 @@
 		
 		
 		
-			<div class="slide" id="onemanx" data-slide="3" data-	stellar	-background-ratio="2">
+			<div class="slide" id="onemanx" data-slide="3" data-stellar-background-ratio="2">
 				
 
 				<!--End Slide 
@@ -148,7 +152,6 @@
 					万门x项目为全国各地学生组织的线下讨论小组，现覆盖以下三个区域：</span>
 				<span class="slideno">One Man X</span>
 				<a class="button1" data-slide="1" title=""></a>
-		
 			</div><!--End Slide 3-->
 		
 		
@@ -156,20 +159,20 @@
 		
 		
 		
-			<div class="slide" id="joinus" data-slide="4" data-	stellar	-background-ratio="0">
+			<div class="slide" id="joinus" data-slide="4" data-stellar-background-ratio="0">
 				<span class="slideno" color="blue">Join &nbsp; Us</span>
 				<span class="parallaxbg">
 					若你有兴趣加入万门的团队，请填写以下表格</span>
 
 				<div class="wrapper">
 		
-					<img width="80px" src="images/slide2/1.png" 	data-	stellar-ratio="3" data-stellar-vertical	-offset="-30	"alt="">
-					<img width="100px" src="images/slide2/2.png" 	data-	stellar-ratio="1" data-stellar-vertical	-offset="-	22"alt="晓楠">
-					<img width="150px" src="images/slide2/3.png" 	data-	stellar-ratio="1.5" data-stellar-	vertical-offset="-	53"alt="绍欢">
-					<img width="120px" src="images/slide2/4.png" 	data-	stellar-ratio="1" data-stellar-vertical-	offset="-25	"alt="昕磊">
-					<img width="200px" src="images/slide2/0.png" 	data-	stellar-ratio="2" data-stellar-vertical-	offset="-50	"alt="童哲">
-					<img width="100px" src="images/slide2/1.png" 	data-	stellar-ratio="2.7" data-stellar-	vertical-offset="-	25"alt="">
-					<img width="100px" src="images/slide2/taox.jpeg" data-	stellar	-ratio="3" data-stellar-vertical-offset	="-55"alt=""	>
+					<img width="80px" src="images/slide2/1.png" 	data-stellar-ratio="3" data-stellar-vertical-offset="-30"alt="">
+					<img width="100px" src="images/slide2/2.png" 	data-stellar-ratio="1" data-stellar-vertical-offset="-22"alt="晓楠">
+					<img width="150px" src="images/slide2/3.png" 	data-stellar-ratio="1.5" data-stellar-	vertical-offset="-53"alt="绍欢">
+					<img width="120px" src="images/slide2/4.png" 	data-stellar-ratio="1" data-stellar-vertical-offset="-25"alt="昕磊">
+					<img width="200px" src="images/slide2/0.png" 	data-stellar-ratio="2" data-stellar-vertical-offset="-50"alt="童哲">
+					<img width="100px" src="images/slide2/1.png" 	data-stellar-ratio="2.7" data-stellar-	vertical-offset="-25"alt="">
+					<img width="100px" src="images/slide2/taox.jpeg" data-stellar-ratio="3" data-stellar-vertical-offset="-55"alt="">
 					<!--img src="images/slide2/blur-ball-big.png" data	-	stellar-ratio="1" data-stellar-vertical-	offset="-	102"alt="">
 					<img src="images/slide2/focus-ball.png" data-		stellar-ratio="1.5" data-stellar-vertical-	offset="-	53"alt="">
 					<img src="images/slide2/small-ball.png" data-		stellar-ratio="2.7" data-stellar-vertical-	offset="-	25"alt=""-->	
@@ -203,11 +206,9 @@
 
            <!--Like Panel that loads last-->
             <div class="likePanel">
-            	分享万门 Y(^_^)Y
-	            <script type="text/javascript" charset="utf-8" src="js/share.js"    ></script>
+	            <script type="text/javascript" charset="utf-8" src="js/share.js"></script>
 	            <a name="xn_share" onclick="shareClick()" type="button_large" href="javascript:;"></a>
                 <wb:share-button count="n" type="button" size="middle" relateuid="3274625642" ></wb:share-button>
-                喜欢我们 ^o^
 				<wb:like type="number" skin="silver"></wb:like>
 
 				<!-- JiaThis Button BEGIN 
@@ -244,6 +245,7 @@ document.write('<iframe scrolling="no" frameborder="0" allowtransparency="true" 
 
 
 
+	<script type="text/javascript" src="js/cloud.js"></script>
 
 
 
