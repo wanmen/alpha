@@ -8,6 +8,7 @@
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <link rel="stylesheet" type="text/css" href="css/circle-menu.css" />
 <link rel="stylesheet" type="text/css" href="css/cloud.css">
+<link rel="stylesheet" type="text/css" href="css/maps.css">
 <!--新浪微博赞-->
 <meta property="og:type" content="webpage" />
 <meta property="og:url" content="wanmendaxue.org" />
@@ -20,6 +21,7 @@
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 <script type="text/javascript" src="js/js.js"></script>
+<script language="javascript" src="js/maps.js"></script>
 <script type="text/javascript" src="js/jQuery.circleMenu.js"></script>
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="js/waypoints.min.js"></script>
@@ -39,7 +41,7 @@
 
 </head>
 
-<body>
+<body onLoad="mapInit()">
 	
 		<div id="sidebar">
 			
@@ -151,6 +153,7 @@
 				<span class="parallaxbg">
 					万门x项目为全国各地学生组织的线下讨论小组，现覆盖以下三个区域：</span>
 				<span class="slideno">One Man X</span>
+				<div id="map" style="width:659px;height:400px;border:#F6F6F6 solid 1px;"></div>
 				<a class="button1" data-slide="1" title=""></a>
 			</div><!--End Slide 3-->
 		
@@ -246,7 +249,6 @@ document.write('<iframe scrolling="no" frameborder="0" allowtransparency="true" 
 
 
 	<script type="text/javascript" src="js/cloud.js"></script>
-
 
 
 
