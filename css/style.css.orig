@@ -17,9 +17,8 @@
 /* 漢字手寫體（cursive） */
 @font-face {
     font-family: 'ff-han';
-    src: local("Hiragino Sans GB");
-    /*src: local(STFangsong), local(STKaiti), local(Kai), local("標楷體"), local(DFKaiShu-SB-Estd-BF);
-    unicode-range: U+4E00-9FA5;*/
+    src: local(STFangsong), local(STKaiti), local(Kai), local("標楷體"), local(DFKaiShu-SB-Estd-BF);
+    unicode-range: U+4E00-9FA5;
     font-weight: normal;
     font-style: normal;
 
@@ -59,7 +58,7 @@ html,body{
     width:22%;
     height:100%;
     position:fixed;
-    z-index:1;}
+    z-index:100;}
 
 #sidebar{
 	background-image: linear-gradient(left bottom, rgb(200,229,255) 37%, rgb(224,240,255) 69%);
@@ -113,8 +112,7 @@ html,body{
 	-webkit-transition: all .2s ease－in－out;
 	width:100%!important;
 }
-
-/**
+/*****
  * Content starts here
  * with parallax effect
  */
@@ -123,35 +121,29 @@ html,body{
     position:relative;
     height:100%;
 }
-/**
- * Sharing on platforms
- */
-.sharePanel{
-	position:absolute;
-	background-color: rgba(163,172,225,0.3);
-	top:0px;
-	left:80%;
-	max-width:300px;
+.likePanel{
+	position:fixed;
+	top:20px;
+	right:10px;
+	width:150px;
 	z-index:1;
-	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
-/**
- * Frame for pretty images
- */
+
 .centralFrame{
 	position:relative;
 	top:10%;
-	left: 10%;
+	left: 30%;
 	max-width: 70%;
 	max-height:70%;
+<<<<<<< HEAD
+	width:auto;
+=======
 	width:70%;
+>>>>>>> 64b46321bd057a7efdc855804577072fbd4bfc3d
 	vertical-align: middle;
 
 }
 
-/**
- * Slides that auto-adjust make up content.
- */
 .slide{
 	float:right;
 	font-family:'BebasRegular','ff-han';
@@ -174,20 +166,12 @@ html,body{
 	);
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
-
-/**
- * Wrapper for content, such as lists
- */
 .wrapper{
 	top:0px;
 	width:100%;
-	max-height: 100%;
 	margin:0 auto;
 	position:center;
 }
-/**
- * Slide notes that appear on the buttom.
- */
 .slideno{
 	font-family:'BebasRegular','ff-han';
 	position:absolute;
@@ -197,10 +181,7 @@ html,body{
 	font-weight:bold;
 	color:rgba(255,255,255,0.5);
 }
-/**
- * Button to scroll back to the front page.
- */
-.button1{
+.button{
 	display:block;
 	width:50px;
 	height:50px;
@@ -210,14 +191,11 @@ html,body{
 	background-color:#222222;
 	background-image:url(../images/arrow.png);
 }
-.button1:hover{
+.button:hover{
 	background-color:#494949;
 	cursor:pointer;
 }
 
-/**
- * Just in case we need buttons for content
- */
 .choice {
 	-moz-box-shadow:inset -32px 16px 46px -34px #bbdaf7;
 	-webkit-box-shadow:inset -32px 16px 46px -34px #bbdaf7;
@@ -254,71 +232,50 @@ html,body{
 #home{
 	background-color: rgba(64,168,255,0.4);
 }
-#home{
-	/*background-image:url(../images/bg.jpg);*/
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	opacity:0.7;
-    filter:alpha(opacity=70); 
-}
-#home .parallaxbg{
-	position:absolute;
-	display: block;
-	text-shadow:1px 1px 0px #528ecc;
-	background-image: linear-gradient(right bottom, rgba(190,229,250,0.5) 36%, rgba(147,206,238,0.5) 71%);
-	background-image: -o-linear-gradient(right bottom, rgba(190,229,250,0.5) 36%, rgba(147,206,238,0.5) 71%);
-	background-image: -moz-linear-gradient(right bottom, rgba(190,229,250,0.5) 36%, rgba(147,206,238,0.5) 71%);
-	background-image: -webkit-linear-gradient(right bottom, rgba(190,229,250,0.5) 36%, rgba(147,206,238,0.5) 71%);
-	background-image: -ms-linear-gradient(right bottom, rgba(190,229,250,0.5) 36%, rgba(147,206,238,0.5) 71%);
-	background-image: -webkit-gradient(
-		linear,
-		right bottom,
-		left top,
-		color-stop(0.36, rgba(190,229,250,0.5)),
-		color-stop(0.71, rgba(147,206,238,0.5))
-	);
-	padding-left: 20px;
-	padding-top: 20px;
-	padding-right: 20px;
-	left:20px;
-	right:20px;
-	top:40px;
-	font-size:20px;
-	color:rgba(0,86,161,0.9);
-	z-index:1;
-	box-shadow:inset 0px 2px 2px rgba(0,0,0,0.3);
-}
-
 /******************************
  SLIDE 2: Departments
 *******************************/
-#departments .choice:first-child{
-	position: absolute;
-	top: 300px;
-	left: 160px;
-}
-#departments .choice:nth-child(2){
-	position: absolute;
-	top: 300px;
-	left: 350px;
-}
-#departments .choice:nth-child(3){
-	position: absolute;
-	top: 300px;
-	left: 540px;
-}
 
-#departments .parallaxbg{
+#departments img:first-child{
 	position:absolute;
-	left:20px;
-	right:20px;
-	top:40px;
-	font-size:48px;
-	color:rgba(0,86,161,0.9);
+	top: 700px;
+	left: -150px;
 }
-
+#departments img:nth-child(2){
+	position:absolute;
+	top:300px;
+	left:100px;
+}
+#departments img:nth-child(3){
+	position:absolute;
+	top:600px;
+	left:300px;
+}
+#departments img:nth-child(4){
+	position:absolute;
+	top:400px;
+	right:200px;
+}
+#departments img:nth-child(5){
+	position:absolute;
+	top:200px;
+	right:500px;
+}
+#departments img:nth-child(6){
+	position:absolute;
+	top:600px;
+	right:300px;
+}
+#departments img:nth-child(7){
+	position:absolute;
+	top:400px;
+	right:100px;
+}
+#departments img:nth-child(8){
+	position:absolute;
+	top:100px;
+	right:300px;
+}
 /******************************
  SLIDE 3 : One Man X
 *******************************/
@@ -342,11 +299,10 @@ html,body{
 
 #onemanx .parallaxbg{
 	position:absolute;
-	left: 20px;
-	right:20px;
+	right:40px;
 	top:40px;
 	font-size:48px;
-	color:rgba(0,86,161,0.9);
+	color:rgba(51,51,51,0.3);
 }
 /*#onemanx img:first-child{
 	position:absolute;
@@ -382,27 +338,24 @@ left: 300px;
  SLIDE 4 
 *******************************/
 
-
 #joinus{
-	background-image:url(../images/bg.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	opacity:0.4;
-    filter:alpha(opacity=40); /* For IE8 and earlier */
+	background-image:url(../images/Slide4/name.png);
+	-webkit-background-size: fill;
+	-moz-background-size: fill;
+	-o-background-size: fill;
+	background-size: fill;
+	opacity:0.3;
+    filter:alpha(opacity=30); /* For IE8 and earlier */
 }
 #joinus .parallaxbg{
 	position:absolute;
-	left: 20px;
-	right:20px;
+	right:40px;
 	top:40px;
 	font-size:28px;
 	color:rgba(51,51,51,0.7);
 }
 
-
-#joinus img:first-child{
+/*#joinus img:first-child{
 	position:absolute;
 	top: 700px;
 	left: -150px;
@@ -414,8 +367,8 @@ left: 300px;
 }
 #joinus img:nth-child(3){
 	position:absolute;
-	top:140px;
-	left:120px;
+	top:600px;
+	left:300px;
 }
 #joinus img:nth-child(4){
 	position:absolute;
@@ -425,27 +378,38 @@ left: 300px;
 #joinus img:nth-child(5){
 	position:absolute;
 	top:200px;
-	right:400px;
+	right:500px;
 }
 #joinus img:nth-child(6){
 	position:absolute;
-	top:200px;
+	top:600px;
 	right:300px;
 }
 #joinus img:nth-child(7){
 	position:absolute;
-	top:350px;
-	right:50px;
+	top:400px;
+	right:100px;
 }
-.likePanel{
-	display:relative;
-	position:fixed;
-	right:0px;
-	top:0px;
-	background-color: rgba(163,172,225,0.3);
-	/*top:90%;*/
-	width:120px;
-	z-index:1;
-	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
-	vertical-align: right;
+#joinus img:nth-child(8){
+	position:absolute;
+	top:100px;
+	right:300px;
 }
+#joinus .transbox
+  {
+  position: absolute;
+  vertical-align: middle;
+  width:80%;
+  height:80%;
+  background-color:#ffffff;
+  border:1px solid black;
+  opacity:0.6;
+  filter:alpha(opacity=60); /* For IE8 and earlier 
+  }
+#joinus .transbox p
+  {
+  margin:30px 40px;
+  font-weight:bold;
+  color:#000000;
+  }
+*/
