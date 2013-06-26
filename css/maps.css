@@ -1,8 +1,8 @@
 div.marker{height:40px;width:120px;background:url(http://pages.haozu.ajkcdn.com/20110909/img/map/marker.png) left top no-repeat;white-space:nowrap;}
 div.marker span{ display:inline-block;height:28px;line-height:28px;margin:0 10px;color:#FFF;background:url(http://pages.haozu.ajkcdn.com/20110909/img/map/marker_bg_170x28.gif) right top no-repeat;padding-right:10px;}
 div#map{
-	width:659px;
-	height:400px;
+	width:459px;
+	height:285px;
 	border:#F6F6F6 solid 1px;
 	top:200px;
 	left:100px;

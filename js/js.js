@@ -26,12 +26,12 @@ jQuery(document).ready(function ($) {
         //If the user scrolls up change the navigation link that has the same data-slide attribute as the slide to active and 
         //remove the active class from the previous navigation link 
         if (direction === 'down') {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active');
+        $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').prev().removeClass('active'); 
         }
         // else If the user scrolls down change the navigation link that has the same data-slide attribute as the slide to active and 
         //remove the active class from the next navigation link 
         else {
-            $('.navigation li[data-slide="' + dataslide + '"]').addClass('active').next().removeClass('active');
+        $('.navigation li[data-slide="' + (dataslide) + '"]').addClass('active').next().removeClass('active'); 
         }
 
     });

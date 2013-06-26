@@ -140,7 +140,7 @@ html,body{
  */
 .centralFrame{
 	position:relative;
-	top:10%;
+	top:0px;
 	left: 10%;
 	max-width: 70%;
 	max-height:70%;
@@ -159,19 +159,7 @@ html,body{
 	width:78%;
 	height:100%;
 	position: relative;
-	background-image: linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -o-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -moz-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -webkit-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -ms-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	
-	background-image: -webkit-gradient(
-		linear,
-		right bottom,
-		left top,
-		color-stop(0.36, rgb(190,229,250)),
-		color-stop(0.71, rgb(147,206,238))
-	);
+	/* Set background color in separate slides to avoid clashes*/
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 }
 
@@ -251,18 +239,18 @@ html,body{
 /******************************
  SLIDE 1: Home 
 *******************************/
-#home{
+/*#home{
 	background-color: rgba(64,168,255,0.4);
 }
 #home{
-	/*background-image:url(../images/bg.jpg);*/
+	/*background-image:url(../images/bg.jpg);
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	opacity:0.7;
     filter:alpha(opacity=70); 
-}
+}*/
 #home .parallaxbg{
 	position:absolute;
 	display: block;
@@ -294,7 +282,25 @@ html,body{
 /******************************
  SLIDE 2: Departments
 *******************************/
-#departments .choice:first-child{
+#departments{
+	background-image: linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -o-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -moz-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -ms-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left top,
+		color-stop(0.36, rgb(190,229,250)),
+		color-stop(0.71, rgb(147,206,238))
+	);
+}
+#departments .menu{
+
+}
+/*#departments .choice:first-child{
 	position: absolute;
 	top: 300px;
 	left: 160px;
@@ -308,14 +314,14 @@ html,body{
 	position: absolute;
 	top: 300px;
 	left: 540px;
-}
+}*/
 
 #departments .parallaxbg{
 	position:absolute;
-	left:20px;
-	right:20px;
+	left:25px;
+	right:25px;
 	top:40px;
-	font-size:42px;
+	font-size:36px;
 	color:rgba(0,86,161,0.9);
 }
 
@@ -323,7 +329,21 @@ html,body{
  SLIDE 3 : One Man X
 *******************************/
 
-
+#onemanx{
+	background-image: linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -o-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -moz-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: -ms-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	
+	background-image: -webkit-gradient(
+		linear,
+		right bottom,
+		left top,
+		color-stop(0.36, rgb(190,229,250)),
+		color-stop(0.71, rgb(147,206,238))
+	);
+}
 #onemanx .choice:first-child{
 	position: absolute;
 	top: 300px;
@@ -359,8 +379,8 @@ html,body{
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	opacity:0.4;
-    filter:alpha(opacity=40); /* For IE8 and earlier */
+	opacity:0.8;
+    filter:alpha(opacity=80); /* For IE8 and earlier */
 }
 #joinus .parallaxbg{
 	position:absolute;

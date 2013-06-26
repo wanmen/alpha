@@ -1,9 +1,9 @@
-﻿;(function($, window, document, undefined){
+;(function($, window, document, undefined){
     var pluginName = 'circleMenu',
         defaults = {
             depth: 0,
-            item_diameter: 80,
-            circle_radius: 100,
+            item_diameter: 30,
+            circle_radius: 80,
             angle:{
                 start: 0,
                 end: 90
@@ -136,10 +136,7 @@
             set;
 
         self.clearTimeouts();
-        if(self._state === 'open'){
-            document.write("<h1>This is a heading</h1>");
-            return self;
-        } 
+        if(self._state === 'open') return self;
         $self.addClass(pluginName+'-open');
         $self.removeClass(pluginName+'-closed');
         if(self.options.step_out >= 0){
@@ -152,19 +149,6 @@
 
             self._timeouts.push(setTimeout(function(){
                 $item.css({
-                    /*background-image: linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-                    background-image: -o-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-                    background-image: -moz-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-                    background-image: -webkit-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-                    background-image: -ms-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-                    
-                    background: "-webkit-gradient(
-                        linear,
-                        right bottom,
-                        left top,
-                        color-stop(0.36, rgb(190,229,250)),
-                        color-stop(0.71, rgb(147,206,238))
-                    );",*/
                     left: $item.data('plugin_'+pluginName+'-pos-x')+'px',
                     top: $item.data('plugin_'+pluginName+'-pos-y')+'px'
                 });

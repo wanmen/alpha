@@ -52,10 +52,10 @@
     -o-transform-origin: 17px 17px;
     transform-origin: 17px 17px;
 
-    -webkit-transition: all .5s ease;
-    -moz-transition: all .5s ease;
-    -o-transition: all .5s ease;
-    transition: all .5s ease;
+    -webkit-transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
