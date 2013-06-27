@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-<html xmlns:wb=“http://open.weibo.com/wb”>
+<html> <!--新浪微博赞 xmlns:wb=“http://open.weibo.com/wb”-->
 <head>
 <meta charset="utf-8">
 <title>万门大学</title>
@@ -9,7 +9,7 @@
 <link rel="stylesheet" type="text/css" href="css/circle-menu.css" />
 <link rel="stylesheet" type="text/css" href="css/cloud.css">
 <link rel="stylesheet" type="text/css" href="css/maps.css">
-<!--新浪微博赞-->
+
 <meta property="og:type" content="webpage" />
 <meta property="og:url" content="wanmendaxue.org" />
 <meta property="og:title" content="万门大学" />
@@ -19,7 +19,11 @@
 <meta name="weibo:webpage:create_at" content="网页的创建时间" />
 <meta name="weibo:webpage:update_at" content="网页的更新时间" /-->
 
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<!-- We could also write:
+script type="text/javascript" src="js/jquery.min.js"</script-->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js">
+</script>
+
 <script type="text/javascript" src="js/js.js"></script>
 <script type="text/javascript" src="js/jquery.stellar.min.js"></script>
 <script type="text/javascript" src="js/waypoints.min.js"></script>
@@ -28,7 +32,9 @@
 <script language="javascript" src="js/maps.js"></script>
 <script type="text/javascript" src="js/jQuery.circleMenu.js"></script>
 
-<!--script type="text/javascript" src="http://widget.renren.com/js/rrshare.js"></script-->
+<!--We don't use renren's share for now:
+	script type="text/javascript" src="http://widget.renren.com/js/rrshare.js">
+</script-->
 <script>
  $(function(){	$('#science').circleMenu({direction:'right', trigger:'hover', step_in: 0, step_out: 0});
  				$('#arts').circleMenu({direction:'full', trigger:'hover', step_in: 300, step_out: 300});
@@ -36,7 +42,9 @@
              });
 </script>
 
-<script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8"></script>
+<!-- For weibo sharing:
+script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js" type="text/javascript" charset="utf-8">
+</script-->
 
 
 </head>
@@ -82,7 +90,8 @@
 		
 			<div class="slide" id="departments" data-slide="2" data-stellar-background-ratio="2">
 				
-				<!--div class ="wrapper">
+				<!--We decided not to have those choices:
+				div class ="wrapper">
 					<a href="#" class="choice"> 理工 </a>
 					<a href="#" class="choice"> 文史 </a>
 					<a href="#" class="choice"> 其他 </a>
@@ -126,7 +135,6 @@
 				  <li><a href="#">声乐</a></li>
 				</ul>
 				<span class="slideno">Departments</span	>
-				<a class="button1" data-slide="1" title="Back To Top"></a>
 		
 			</div><!--End Slide 2-->
 		
@@ -142,7 +150,7 @@
     				<div id="map">
     				</div>
     			</div>
-				<a class="button1" data-slide="1" title=""></a>
+				<a class="button1" data-slide="1" title="Back to Top"></a>
 			</div><!--End Slide 3-->
 		
 		
@@ -156,23 +164,26 @@
 					你有兴趣加入万门的团队?</span>
                 <div class="centralFrame">
                 	<iframe src='contact/contactform.php' frameborder='0'
-                width='100%' height='600' allowtransparency='true'></iframe>
+                width='100%' height='600' allowtransparency='true'>
+                    </iframe>
                 </div>
 				<div class="wrapper">
 		
-					<img width="80px" src="images/slide2/1.png" 	data-stellar-ratio="3" data-stellar-vertical-offset="-30"alt="">
-					<img width="100px" src="images/slide2/2.png" 	data-stellar-ratio="1" data-stellar-vertical-offset="-22"alt="晓楠">
-					<img width="150px" src="images/slide2/3.png" 	data-stellar-ratio="1.5" data-stellar-	vertical-offset="-53"alt="绍欢">
-					<img width="120px" src="images/slide2/4.png" 	data-stellar-ratio="1" data-stellar-vertical-offset="-25"alt="昕磊">
-					<img width="200px" src="images/slide2/0.png" 	data-stellar-ratio="2" data-stellar-vertical-offset="-150"alt="童哲">
-					<img width="100px" src="images/slide2/1.png" 	data-stellar-ratio="2.7" data-stellar-	vertical-offset="-25"alt="">
-					<img width="100px" src="images/slide2/5.png" data-stellar-ratio="3" data-stellar-vertical-offset="-55"alt="">
-					<!--img src="images/slide2/blur-ball-big.png" data	-	stellar-ratio="1" data-stellar-vertical-	offset="-	102"alt="">
-					<img src="images/slide2/focus-ball.png" data-		stellar-ratio="1.5" data-stellar-vertical-	offset="-	53"alt="">
-					<img src="images/slide2/small-ball.png" data-		stellar-ratio="2.7" data-stellar-vertical-	offset="-	25"alt=""-->	
+					<img width="80px" src="images/slide2/1.png" 	
+					data-stellar-ratio="3" data-stellar-vertical-offset="-30"alt="">
+					<img width="100px" src="images/slide2/2.png" 	
+					data-stellar-ratio="1" data-stellar-vertical-offset="-22"alt="晓楠">
+					<img width="150px" src="images/slide2/3.png" 	
+					data-stellar-ratio="1.5" data-stellar-	vertical-offset="-53"alt="绍欢">
+					<img width="120px" src="images/slide2/4.png" 	
+					data-stellar-ratio="1" data-stellar-vertical-offset="-25"alt="咪咪">
+					<img width="200px" src="images/slide2/0.png" 	
+					data-stellar-ratio="2" data-stellar-vertical-offset="-150"alt="童哲">
+					<img width="100px" src="images/slide2/5.png" 
+					data-stellar-ratio="3" data-stellar-vertical-offset="-55"alt="徐涛">	
 				</div><!--end of wrapper-->
 
-				<a class="button1" data-slide="1" title=""></a>
+				
 
 				<!--div class="sharePanel">
 		    	<script type="text/javascript" charset="utf-8" src="js/share.js"    ></script>
@@ -230,7 +241,7 @@
                 </script>
 			</div-->		
 
-		     
+		         <a class="button1" data-slide="1" title="Back to Top"></a>
 		
 			</div><!--End Slide 4-->
 	

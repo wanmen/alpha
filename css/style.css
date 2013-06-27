@@ -1,20 +1,10 @@
 /* CSS Document
  * Based on parallax template 
  * and Standard Han template
- * Modified by Mimee on 14 Jun, 2013 
+ * Modified by Mimee on 27 Jun, 2013 
  */
 @charset "utf-8";
 
-/* 漢字標準格式
- * Standard Han Format
- *
- * Version: 1.2
- * Lisence: MIT Lisence
- * Last-Modified: 2011/12/22
- */
-
-/* 手動設定字體 */
-/* 漢字手寫體（cursive） */
 @font-face {
     font-family: 'ff-han';
     src: local("Hiragino Sans GB");
@@ -103,9 +93,7 @@ html,body{
 	margin-bottom:2px;
 	font-weight:bold;
 	-webkit-transition: all .5s ease－in－out;
-	/*border-bottom:1px solid black;*/
 	text-align:right;
-	/*width:170px;*/
 }
 .navigation li:hover,.active{
 	font-size:24pt;
@@ -124,9 +112,9 @@ html,body{
     height:100%;
 }
 /**
- * Sharing on platforms
+ * Sharing on platforms, currently not used
  */
-.sharePanel{
+/*.sharePanel{
 	position:absolute;
 	background-color: rgba(163,172,225,0.3);
 	top:0px;
@@ -134,9 +122,9 @@ html,body{
 	max-width:300px;
 	z-index:1;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
-}
+}*/
 /**
- * Frame for pretty images
+ * Frame for pretty images or just central object.
  */
 .centralFrame{
 	position:relative;
@@ -204,9 +192,11 @@ html,body{
 }
 
 /**
- * Just in case we need buttons for content
+ * \brief Choices
+ * \details Just in case we need buttons for content
+ * \remarks Currently hidden due to restyling.
  */
-.choice {
+/*.choice {
 	-moz-box-shadow:inset -32px 16px 46px -34px #bbdaf7;
 	-webkit-box-shadow:inset -32px 16px 46px -34px #bbdaf7;
 	box-shadow:inset -32px 16px 46px -34px #bbdaf7;
@@ -234,23 +224,11 @@ html,body{
 }.choice:active {
 	position:relative;
 	top:1px;
-}
+}*/
 
 /******************************
  SLIDE 1: Home 
 *******************************/
-/*#home{
-	background-color: rgba(64,168,255,0.4);
-}
-#home{
-	/*background-image:url(../images/bg.jpg);
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	opacity:0.7;
-    filter:alpha(opacity=70); 
-}*/
 #home .parallaxbg{
 	position:absolute;
 	display: block;
@@ -283,11 +261,11 @@ html,body{
  SLIDE 2: Departments
 *******************************/
 #departments{
-	background-image: linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -o-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -moz-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -webkit-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
-	background-image: -ms-linear-gradient(right bottom, rgb(190,229,250) 36%, rgb(147,206,238) 71%);
+	background-image: linear-gradient(right bottom, rgb(190,229,250) 28%, rgb(147,206,238) 71%);
+	background-image: -o-linear-gradient(right bottom, rgb(190,229,250) 28%, rgb(147,206,238) 71%);
+	background-image: -moz-linear-gradient(right bottom, rgb(190,229,250) 28%, rgb(147,206,238) 71%);
+	background-image: -webkit-linear-gradient(right bottom, rgb(190,229,250) 28%, rgb(147,206,238) 71%);
+	background-image: -ms-linear-gradient(right bottom, rgb(190,229,250) 28%, rgb(147,206,238) 71%);
 	
 	background-image: -webkit-gradient(
 		linear,
@@ -300,21 +278,24 @@ html,body{
 #departments .menu{
 
 }
-/*#departments .choice:first-child{
+/* The buttons I thought could be useful.
+ * #departments .choice:first-child{
 	position: absolute;
 	top: 300px;
 	left: 160px;
-}
-#departments .choice:nth-child(2){
+ * }
+ * #departments .choice:nth-child(2){
 	position: absolute;
 	top: 300px;
 	left: 350px;
-}
-#departments .choice:nth-child(3){
+ * }
+ * #departments .choice:nth-child(3){
 	position: absolute;
 	top: 300px;
 	left: 540px;
-}*/
+ * }
+ * end of buttons 
+ */
 
 #departments .parallaxbg{
 	position:absolute;
@@ -372,7 +353,6 @@ html,body{
  SLIDE 4 
 *******************************/
 
-
 #joinus{
 	background-image:url(../images/Monet.png);
 	-webkit-background-size: cover;
@@ -395,12 +375,12 @@ html,body{
 #joinus img:first-child{
 	position:absolute;
 	top: 10%;
-	left: -10%;
+	left: 50%;
 }
 #joinus img:nth-child(2){
 	position:absolute;
 	top:20%;
-	left:15%;
+	left:65%;
 }
 #joinus img:nth-child(3){
 	position:absolute;
@@ -414,28 +394,28 @@ html,body{
 }
 #joinus img:nth-child(5){
 	position:absolute;
-	top:-200px;
-	right:50%;
+	top:50px;
+	right:50px;
 }
 #joinus img:nth-child(6){
 	position:absolute;
 	top:200px;
 	right:300px;
 }
-#joinus img:nth-child(7){
-	position:absolute;
-	top:350px;
-	right:50px;
-}
-.likePanel{
+
+
+/** \brief Panel for likes and shares
+ *  \details Supports sina weibo and renren
+ *  \remarks Currently hidden due to speed.
+ * /
+/*.likePanel{
 	display:relative;
 	position:fixed;
 	right:0px;
 	top:0px;
 	background-color: rgba(163,172,225,0.3);
-	/*top:90%;*/
 	width:120px;
 	z-index:1;
 	box-shadow:inset 0px 10px 10px rgba(0,0,0,0.3);
 	vertical-align: right;
-}
+}*/
